@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        ...
+        &copy; 2022 thisisholti.com 
       </footer>
     </>
   )
