@@ -18,8 +18,12 @@ export default function Home() {
         <Header title="Welcome!" />
         <p className="description">Something big will come here!</p>
         <p>
-          <a href="https://twitter.com/thisisholti" target={'_blank'}>
-            <TwitterIcon fontSize='large'/>
+          <a
+            href="https://twitter.com/thisisholti"
+            target={'_blank'}
+            title={'Click here to see the Twitter profile of @thisisholti'}
+          >
+            <TwitterIcon fontSize="large" />
           </a>
         </p>
       </main>
