@@ -1,47 +1,76 @@
-html {
-  height: -webkit-fill-available;
+
+/* CSS */
+@import url('normalize.css');
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('ubuntu-regular-webfont.woff2') format('woff2'),
+         url('ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-font-face {
-  font-family: 'ubuntu';
-  src: url('Ubuntu-Regular.ttf') format('truetype');
+html,
+html * {
+    box-sizing: border-box;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: ubuntu, sans-serif;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-  background-color: #edf0da;
+  height: 100vh;
+  height: -webkit-fill-available;
+  font-family: 'ubunturegular', Fallback, sans-serif;
+  background-color:  #edf0da;;
   color: #8f5c38;
 }
 
-* {
-  box-sizing: border-box;
+html {
+  /* height: 100%; */
+  height: -webkit-fill-available;
 }
 
 main {
-  padding: 5rem 0;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: calc(100vh - 1rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+    color: inherit;;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
