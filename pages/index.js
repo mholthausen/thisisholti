@@ -45,7 +45,7 @@ export default function Home() {
         </p>
         <p>
           <a
-            href="https://twitter.com/thisisholti"
+            href="https://twitter.com/thisisholti/"
             target={'_blank'}
             title={'Click here to see the Twitter profile of @thisisholti'}
           >
