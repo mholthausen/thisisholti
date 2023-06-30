@@ -6,7 +6,7 @@ export default function Data(props) {
 
 const GetFirstDayOfMonth = (dayOfTheWeek, month, year) => {
   const date = new Date(year, month, 1);
-  date.setHours(19);
+  date.setHours(17);
   date.setMinutes(30);
   date.setDate(date.getDate() + ((7 + dayOfTheWeek) - date.getDay()) % 7)
   return date;
