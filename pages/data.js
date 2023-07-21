@@ -60,7 +60,7 @@ export const getServerSideProps = async ({ req, res, resolvedUrl }) => {
 
   const event = new Date(GetFirstNextFirstWednesday());
   res.setHeader("Content-Type", "application/json; charset=utf-8");
-  res.write('{"next": "' + event.toISOString() + '", "events": ' + JSON.stringify(getEvents()) + '"}');
+  res.write('{"next": "' + event.toISOString() + '", "events": ' + JSON.stringify(getEvents()) + '}');
   res.end();
   return {
     props: {},
