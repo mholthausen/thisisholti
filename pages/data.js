@@ -41,9 +41,15 @@ const getEvents = () => {
       date: "2023-09-09T13:00:00.000Z",
       address: "Am Molenkopf, 50735 Köln",
     },
-    { id: 3, title: "Party", date: "2023-11-04T18:00:00.000Z", address: "TBA" },
     {
-      id: 4,
+      id: 3,
+      title: "Imis-Fahrt",
+      date: "2023-09-30T08:00:00.000Z",
+      address: "Am Molenkopf, 50735 Köln",
+    },
+    { id: 4, title: "Party", date: "2023-11-04T18:00:00.000Z", address: "TBA" },
+    {
+      id: 5,
       title: "Weihnachtsfeier",
       date: "2023-11-24T17:00:00.000Z",
       address: "Alte Wipperfürther Straße 40, 51065 Köln",
