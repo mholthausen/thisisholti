@@ -45,7 +45,7 @@ const getEvents = () => {
       id: 3,
       title: "Imis-Fahrt",
       date: "2023-09-30T08:00:00.000Z",
-      address: "Am Molenkopf, 50735 Köln",
+      address: "Duinweg 108, Westkapelle, 4361 KX, Niederlande",
     },
     { id: 4, title: "Party", date: "2023-11-04T18:00:00.000Z", address: "TBA" },
     {
