@@ -30,24 +30,23 @@ const GetFirstNextFirstDayOfTheWeek = (currentDate, day) => {
 const getEvents = () => {
   return [
     {
-      id: 1,
-      title: "Sommerfest",
-      date: "2023-08-26T13:00:00.000Z",
-      address: "Rathenauplatz, 50674 Köln",
-    },
-    {
-      id: 2,
-      title: "RhineCleanup Day",
-      date: "2023-09-09T13:00:00.000Z",
-      address: "Am Molenkopf, 50735 Köln",
-    },
-    {
       id: 3,
       title: "Imis-Fahrt",
       date: "2023-09-30T08:00:00.000Z",
       address: "Duinweg 108, Westkapelle, 4361 KX, Niederlande",
     },
-    { id: 4, title: "Party", date: "2023-11-04T18:00:00.000Z", address: "TBA" },
+    {
+      id: 4,
+      title: "Party",
+      date: "2023-10-21T20:00:00.000Z",
+      address: "Schützengildenweg 1, 51067 Köln",
+    },
+    {
+      id: 6,
+      title: "Brauhauskarneval",
+      date: "2023-11-11T10:00:00.000Z",
+      address: "Hahnenstraße 24, 50667 Köln",
+    },
     {
       id: 5,
       title: "Weihnachtsfeier",
@@ -66,7 +65,13 @@ export const getServerSideProps = async ({ req, res, resolvedUrl }) => {
 
   const event = new Date(GetFirstNextFirstWednesday());
   res.setHeader("Content-Type", "application/json; charset=utf-8");
-  res.write('{"next": "' + event.toISOString() + '", "events": ' + JSON.stringify(getEvents()) + '}');
+  res.write(
+    '{"next": "' +
+      event.toISOString() +
+      '", "events": ' +
+      JSON.stringify(getEvents()) +
+      "}"
+  );
   res.end();
   return {
     props: {},
