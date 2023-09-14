@@ -38,7 +38,7 @@ const getEvents = () => {
     {
       id: 4,
       title: "Party",
-      date: "2023-10-21T20:00:00.000Z",
+      date: "2023-10-21T19:00:00.000Z",
       address: "Schützengildenweg 1, 51067 Köln",
     },
     {
