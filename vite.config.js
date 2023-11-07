@@ -8,7 +8,7 @@ export default defineConfig({
       include: '**/*.{ts,js,tsx}'
     })
   ],
-  base: '/typescript-starter/',
+  base: '/thisisholti/',
   root: 'src',
   build: {
     outDir: '../dist'

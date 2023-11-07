@@ -4,7 +4,7 @@ We welcome contributions from the community to improve and enhance this project.
 
 ## Reporting Issues
 
-If you encounter a bug or have a feature request, please [open an issue](https://github.com/mholthausen/typescript-starter/issues) on this repository. When creating an issue, please provide as much detail as possible, including steps to reproduce the issue if applicable.
+If you encounter a bug or have a feature request, please [open an issue](https://github.com/mholthausen/thisisholti/issues) on this repository. When creating an issue, please provide as much detail as possible, including steps to reproduce the issue if applicable.
 
 ## Making Contributions
 

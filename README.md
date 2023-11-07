@@ -19,13 +19,13 @@ Follow these steps to install the project dependencies:
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/mholthausen/typescript-starter.git
+    git clone https://github.com/mholthausen/thisisholti.git
     ```
 
 2. Change into the project directory:
 
     ```bash
-    cd typescript-starter
+    cd thisisholti
     ```
 
 3. Install the project dependencies:
@@ -64,4 +64,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Happy coding! If you have any questions or encounter issues, please [open an issue](https://github.com/mholthausen/typescript-starter/issues) on this repository.
+Happy coding! If you have any questions or encounter issues, please [open an issue](https://github.com/mholthausen/thisisholti/issues) on this repository.
