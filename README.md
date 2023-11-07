@@ -1,89 +1,67 @@
-# Next + Netlify Starter
+# TypeScript Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/46648482-644c-4c80-bafb-872057e51b6b/deploy-status)](https://app.netlify.com/sites/next-dev-starter/deploys)
-
-This is a [Next.js](https://nextjs.org/) v12 project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and set up to be instantly deployed to [Netlify](https://url.netlify.com/SyTBPVamO)!
-
-This project is a very minimal starter that includes 2 sample components, a global stylesheet, a `netlify.toml` for deployment, and a `jsconfig.json` for setting up absolute imports and aliases. It also includes the [Essential Next.js Build Plugin](https://github.com/netlify/netlify-plugin-nextjs), which will allow for you to implement features like Preview Mode, server-side rendering/incremental static regeneration via Netlify Functions, and internationalized routing.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
-
-(If you click this button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify)
-
-## Table of Contents:
- 
-- [Getting Started](#getting-started)
-- [Installation options](#installation-options)
-- [Testing](#testing)
-  - [Included Default Testing](#included-default-testing)
-  - [Removing Renovate](#removing-renovate)
-  - [Removing Cypress](#removing-cypress)
+Welcome to the TypeScript Starter project! This repository serves as a foundational template for kickstarting your TypeScript, React, and Vite-based web application development.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, you'll need to have the following software installed on your system:
+
+1. **Node.js**: You can download and install Node.js from [nodejs.org](https://nodejs.org/).
+
+2. **npm** (Node Package Manager): npm is included with Node.js installation.
+
+Once you have Node.js and npm installed, you can proceed to set up and run the application.
+
+## Installation
+
+Follow these steps to install the project dependencies:
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone https://github.com/mholthausen/typescript-starter.git
+    ```
+
+2. Change into the project directory:
+
+    ```bash
+    cd typescript-starter
+    ```
+
+3. Install the project dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+After successfully installing the dependencies, you can start the application using the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This will build and run the application using Vite's development server. By default, the server will be accessible at `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Folder Structure
 
-### Installation options
+Here is a brief overview of the project's folder structure:
 
-**Option one:** One-click deploy
+- `src/`: This directory contains your application's source code.
+- `public/`: Publicly accessible assets like HTML files and static assets.
+- `package.json`: Project configuration and dependencies.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter&utm_source=github&utm_medium=nextstarter-cs&utm_campaign=devex-cs)
+Feel free to modify and extend the project as needed for your specific requirements.
 
-**Option two:** Manual clone
+## Contributing
 
-1. Clone this repo: `git clone https://github.com/netlify-templates/next-netlify-starter.git`
-2. Navigate to the directory and run `npm install`
-3. Run `npm run dev`
-4. Make your changes
-5. Connect to [Netlify](https://url.netlify.com/Bk4UicocL) manually (the `netlify.toml` file is the one you'll need to make sure stays intact to make sure the export is done and pointed to the right stuff)
+If you'd like to contribute to this project, please read our [Contributing Guidelines](CONTRIBUTING.md) for more information.
 
-## Testing
+## License
 
-### Included Default Testing
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-We’ve included some tooling that helps us maintain these templates. This template currently uses:
+---
 
-- [Renovate](https://www.mend.io/free-developer-tools/renovate/) - to regularly update our dependencies
-- [Cypress](https://www.cypress.io/) - to run tests against how the template runs in the browser
-- [Cypress Netlify Build Plugin](https://github.com/cypress-io/netlify-plugin-cypress) - to run our tests during our build process
-
-If your team is not interested in this tooling, you can remove them with ease!
-
-### Removing Renovate
-
-In order to keep our project up-to-date with dependencies we use a tool called [Renovate](https://github.com/marketplace/renovate). If you’re not interested in this tooling, delete the `renovate.json` file and commit that onto your main branch.
-
-### Removing Cypress
-
-For our testing, we use [Cypress](https://www.cypress.io/) for end-to-end testing. This makes sure that we can validate that our templates are rendering and displaying as we’d expect. By default, we have Cypress not generate deploy links if our tests don’t pass. If you’d like to keep Cypress and still generate the deploy links, go into your `netlify.toml` and delete the plugin configuration lines:
-
-```diff
-[[plugins]]
-  package = "netlify-plugin-cypress"
--  [plugins.inputs.postBuild]
--    enable = true
--
--  [plugins.inputs]
--    enable = false 
-```
-
-If you’d like to remove the `netlify-plugin-cypress` build plugin entirely, you’d need to delete the entire block above instead. And then make sure sure to remove the package from the dependencies using:
-
-```bash
-npm uninstall -D netlify-plugin-cypress
-```
-
-And lastly if you’d like to remove Cypress entirely, delete the entire `cypress` folder and the `cypress.config.ts` file. Then remove the dependency using:
-
-```bash
-npm 
+Happy coding! If you have any questions or encounter issues, please [open an issue](https://github.com/mholthausen/typescript-starter/issues) on this repository.
