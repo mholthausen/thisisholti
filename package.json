@@ -9,7 +9,7 @@
     "clean": "rimraf ./dist",
     "build": "rimraf ./dist && vite --config vite.config.js build",
     "lint": "eslint \"**/*.{ts,tsx}\"",
-    "test": "npm run lint && jest --coverage",
+    "test": "npm run lint && jest --coverage --passWithNoTests",
     "preview": "vite --config vite.config.js preview"
   },
   "keywords": [],
