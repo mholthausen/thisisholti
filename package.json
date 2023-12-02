@@ -12,15 +12,6 @@
     "test": "npm run lint && jest --coverage --passWithNoTests",
     "preview": "vite --config vite.config.js preview"
   },
-  "release": {
-    "branches": [
-      "main",
-      "next"
-    ]
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "keywords": [],
   "author": "Michael Holthausen <holthausen@terrestris.de> (https://www.terrestris.de/)",
   "license": "Apache-2.0",
@@ -81,7 +72,6 @@
     "@csstools/normalize.css": "12.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "4.11.0",
-    "semantic-release": "^22.0.8"
+    "react-icons": "4.11.0"
   }
 }
