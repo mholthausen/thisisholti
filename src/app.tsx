@@ -1,16 +1,27 @@
 import * as React from 'react';
-import ReactDOM from 'react-dom/client';
 
 import '@csstools/normalize.css';
 import './app.scss';
+import ReactDOM, { render } from 'react-dom';
 
-const App = () => {
+
+const Content: React.FC = () => {
   return <div>Coming soon...</div>;
 };
 
-const root = ReactDOM.createRoot(document.getElementById('app') as HTMLElement);
-root.render(
+const App: React.FC = () => {
+  return (
+    <div id="app">
+      <Content />
+    </div>
+  );
+};
+
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+export default App;
