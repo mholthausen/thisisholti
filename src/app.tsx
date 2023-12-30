@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import '@csstools/normalize.css';
 import './app.scss';
 
-import Welcome from './components/welcome';
+import Welcome from './components/Welcome';
 
 const App = () => {
   return <Welcome />;
