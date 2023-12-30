@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom/client';
 import '@csstools/normalize.css';
 import './app.scss';
 
+import Welcome from './components/welcome';
+
 const App = () => {
-  return <div>Coming soon...</div>;
+  return <Welcome />;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('app') as HTMLElement);
